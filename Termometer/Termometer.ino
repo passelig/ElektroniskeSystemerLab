@@ -20,7 +20,7 @@ void loop() {
   float voltage = map(valueFromADConverter, lowValueFromADconverter, highValueFromADconverter, lowReferenceVoltage, highReferenceVoltage)/(float)100;
  
   Serial.println("Verdi lest fra AD omformer: "  + String(valueFromADConverter));
-  Serial.println("Temperatur: " + String(temperature) + " grader");
+  Serial.println("Endre tekst: " + String(voltage) + " grader");
   Serial.println("Spenning: " + String(voltage) + "v");
   Serial.println();
 
